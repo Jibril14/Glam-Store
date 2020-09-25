@@ -1,0 +1,32 @@
+{% load static %}
+
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static "shop/css/header.css" %}">
+{% endblock %}
+
+<div style="padding-bottom:7px; ">
+<header class="mobile-nav">
+    <span class="brand"><a href="{% url "home" %}">Glam Store</a></span>
+    <div class="search-btn">
+        <span class="menu-cart"><a href="{% url "checkout" %}"><i class="fa fa-cart-plus">C</i><span class="cart-link">(0)</span></a></span>
+        <span class="menu-btn">☰</span>
+    </div>
+</header>
+<nav class="nav">
+    <div class="nav-container">
+        <h1 class="logo"><a href="{% url "home" %}"> Glam Store</a></h1>
+
+        <ul class="bnn">
+            <li><a href="{% url "home" %}"> Home</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="{% url "shop" %}">Shop</a></li>
+            <li><a  href="{% url "checkout" %}"><i class="fa fa-cart-plus">C</i><span class="cart-link">(0)</span></a>
+            </li>
+           <li class="mobile-search"> {% include "shop/search.html" %}</li>
+        </ul>
+    </div>
+</nav>
+</div>
+
+
