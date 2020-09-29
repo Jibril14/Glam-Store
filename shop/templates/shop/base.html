@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Glam Store</title>
+       
+        {% block css_files %}
+		    {% endblock %}
+		
+		  {% block js_files %}
+			
+			{% endblock %}
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="{% static "shop/css/base.css" %}">
+    </head>
+    <body>
+
+        {% include "shop/header.html" %}
+        <div class="carousel-container">{% include "shop/carousel.html" %}</div>
+
+        <div class="page-container">
+          {% block shop %}
+          
+          {% endblock %}
+        </div>  
+
+        <div class="banner">{% include "shop/banner.html" %}</div>
+
+        <div class="banner">{% include "shop/herosale.html" %}</div>
+
+
+
+        {% include "shop/footer.html" %}
+     
+   <script src="{% static "shop/js/base.js" %}"></script> 
+   <script src="{% static "shop/js/index.js" %}"></script>      
+    </body>
+</html>
