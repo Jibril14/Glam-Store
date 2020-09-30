@@ -1,0 +1,56 @@
+/**
+ * Template Name: My Personal Template
+ * Author: Abdullahi Abdulwasiu J
+ * License: ""
+ */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    color: #000;
+    background-color: #f1f1f1;
+    font-family: "Ubuntu", sans-serif;
+    align-items:center;
+}
+
+.carousel-container{
+    margin: 100px auto;
+    width: 80%;
+   
+}
+.banner{
+    margin: 120px auto;
+    width: 80%;
+   
+}
+
+.page-container{
+    margin: 10px auto;
+	background-color: #fff;
+    width: 80%;
+    padding: 18px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container{
+    width: 100%;
+}
+.page-container{
+    width: 100%;
+    background-color: #fff;
+}
+
+.banner{
+    margin: 100px auto;
+    width: 100%;
+   
+}
+}
