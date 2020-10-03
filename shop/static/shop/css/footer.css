@@ -1,0 +1,29 @@
+.footer {
+    text-align: center !important;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #fff;
+    background-color: #000 !important;
+ 
+}
+
+.footer a {
+    color: #fb9d06;
+}
+
+.footer a:hover {
+    color: hotpink;
+}
+
+.avatar-text{
+	padding: 0 5px;
+}
+
+.avatar {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border:1px solid #fff;
+
+}
+
