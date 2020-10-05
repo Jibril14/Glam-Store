@@ -1,0 +1,18 @@
+{% load static %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static "shop/css/search.css" %}">
+{% endblock %}
+
+<div class="search-bar">
+    <form>
+        <input type="text" class="input" name="item_name" placeholder="Search..." />     
+        <button type="button" id="search-btn">
+            <i  class="fas fa-search">s</i>
+        </button>
+    
+    </form>
+</div>
+{% block js_files %}
+<script src="{% static "shop/js/search.js" %}"></script> 
+{% endblock %}
