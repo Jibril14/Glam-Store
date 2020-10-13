@@ -1,0 +1,35 @@
+{% load static %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static "shop/css/carousel.css" %}">
+{% endblock %}
+
+<div class="slide">
+<div class="carousel-cover">
+
+    <div class="carousel-text">    
+        <h1>Free Shipping and Return</h1>
+        <h2>Amazing Life of Ecommerce</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adip ea tempora ut sint laborum!</p>
+        <button class="btn"><a href="{% url "shop" %}">Start shoping</a></button>
+    </div>
+    <div>
+    <div class="carousel">     
+        <div class="image-container" id="imgs">
+             <img src="{% static "shop/images/img2.jpg" %}" alt="glam store" style="width: 100%">   
+            <img src="{% static "shop/images/img3.jpg" %}" alt="glam store" style="width: 100%">   
+            <img src="{% static "shop/images/img4.jpg" %}" alt="glam store" style="width: 100%">   
+        </div>
+        </div>
+
+        <div class="buttons-container">
+            <button  class="carousel-btn" id="left-btn" style="font-weight:bold; color:white" ><</button>
+            <button class="carousel-btn" id="right-btn" style="font-weight:bold; color:white">></button>
+        </div>
+
+    </div>
+    </div>
+</div>
+    {% block js_files %}
+    <script src="{% static "shop/js/carousel.js" %}"></script> 
+{% endblock %}
