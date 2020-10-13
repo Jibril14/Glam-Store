@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+/** Image Slider **/
+
+
+.carousel-cover {
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: aquamarine;
+    overflow: hidden;
+   
+    
+}
+
+.carousel-text {
+    width: 50%;
+    padding: 40px 0 30px 40px;
+}
+
+
+
+.carousel {
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+    transform: translateY(-220px);
+    margin: 4px;
+    position: absolute;
+}
+#left-btn {
+    transform: translateX(calc(-21vw));
+    float: left;
+}
+#right-btn {
+    transform: translateX(calc(22vw));
+
+    float: right;
+}
+
+.carousel-btn{
+    color: #000;
+    background: rgba(235, 101, 101, 0.808);
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+    width: 20px;
+}
+
+.carousel-btn:hover {
+    opacity: 0.8;
+    background: rgb(165, 236, 229);
+}
+
+.carousel-btn:focus {
+    outline: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .carousel-cover {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .carousel-text {
+        width: 100%;
+        padding: 7px;
+        text-align: center;
+    }
+    .buttons-container {
+        position: relative;
+    }
+    #left-btn {
+        transform: translateX(0);
+    }
+    #right-btn {
+        float: right;
+        transform: translateX(0);
+    }
+}
+
+
+.btn {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 5px 8px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 6px;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.btn:hover {
+    background-color: #ff9a8c;
+    color: white;
+}
+.btn a{
+text-decoration: none;
+color: #fff;
+}
