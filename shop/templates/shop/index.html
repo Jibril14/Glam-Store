@@ -1,0 +1,36 @@
+{% extends "shop/base.html" %}
+ {% load static %}
+
+ {% block css_files %}
+ <link rel="stylesheet" href="{% static "shop/css/index.css" %}">
+ {% endblock %}
+ 
+
+{% block shop %}
+
+<div class="row">
+  <h3>Top Selling Items</h3>
+  <h5>Money back! Get coupon and discount</h5>	
+  {% for product in products %} 
+  <a href="{% url "detail" product.id %}" >
+    <div class="col">
+     {#  <img src="{{post.image_name}}"  alt="{{post.title}}  class="xyz"> #}
+     
+        <div class="content">
+            <img src="{% static "shop/images/img3.jpg" %}" alt="glam store" style="width: 100%">   
+            <h4 id="nm{{product.id}}">{{product.title}}</h4>
+          </a>
+            <div class="inner-content">
+                <p>&#8358<span id="pr{{product.id}}">{{product.price}}</span></p>
+                <button id="{{product.id}}" class="cart-btn">Add to cart</button>
+            </div>   
+         </div>
+	  </div>
+  
+ {% endfor %} 
+</div>
+
+<div class="paginator-container">{% include "shop/paginator.html" %}</div>
+
+{% endblock %}
+
