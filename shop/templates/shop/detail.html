@@ -1,0 +1,20 @@
+{% extends "shop/base.html"%} {% load static %} {% block css_files%} <link
+rel="stylesheet" href="{% static "shop/css/detail.css" %}"> {% endblock %} {% block shop %}
+
+<div class="detail-container">
+
+   <img src="{% static "shop/images/img3.jpg" %}" alt="glam store" >   
+   <h4>{{single_product.title}}</h4>
+    <div class="inner-content">
+        <p><span class="prod">Category: </span>{{single_product.category}}</p>
+       
+    </div>
+    <p><span class="prod">Price: </span> <span style="text-decoration: line-through;">{{single_product.price}} </span></p>
+    <p><span class="prod">Discount Price:</span> {{single_product.discount_price}}</p>
+
+    <p><span class="prod">Description:</span> {{single_product.description}}
+    </p>
+  
+</div>
+{% endblock  %}
+
