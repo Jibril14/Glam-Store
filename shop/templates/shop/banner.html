@@ -1,0 +1,20 @@
+{% load static %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static "shop/css/banner.css" %}">
+{% endblock %}
+
+<div class="hero-cover">
+    <div class="banner-container">
+         {#<img src="./img2.png" alt="img" />#}
+         <img src="{% static "shop/images/img3.jpg" %}" alt="glam store" style="width: 100%">   
+
+    </div>
+
+    <div class="hero-text">
+         <h1>Shop From Our Collection</h1>
+        <h2>Warranty Guaranteed | Free Delivery</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adip ea tempora ut sint laborum!</p>
+        <button class="hero-btn"><a href="{% url "shop" %}">Buy Now</a></button>
+    </div>
+</div>
