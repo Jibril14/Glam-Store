@@ -1,0 +1,76 @@
+/**
+* Template Name: My Personal Template
+* Author: Abdullahi
+* License: free
+*/
+
+
+.hero-cover{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: cyan;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+
+.banner-container{
+	width: 50%;
+	margin: 0;
+    padding: 0;
+	overflow: hidden;
+}
+
+.banner-container img{
+	width: 100%;
+	margin: 0;
+    padding: 0;
+
+}
+
+.hero-text{
+	width: 50%;
+	text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-cover{
+        flex-direction: column;
+       }
+
+       .banner-container{
+       	width: 90%;
+       }
+       .hero-text{
+	     width: 90%;
+		 text-align: center;
+}
+}
+
+
+.hero-btn {
+    color: #000;
+    background: red;
+    border: none;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.hero-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-btn:hover {
+    opacity: 0.8;
+    background: rgba(251, 49, 157, 0.959);
+    color: #fff;
+}
+
+.hero-btn :focus {
+    outline: none;
+}
