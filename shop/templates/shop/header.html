@@ -8,8 +8,8 @@
 <div style="padding-bottom:7px; ">
 <header class="mobile-nav">
     <span class="brand"><a href="{% url "home" %}">Glam Store</a></span>
-    <div class="search-btn">
-        <span class="menu-cart"><a href="{% url "checkout" %}"><i class="fa fa-cart-plus">C</i><span class="cart-link">(0)</span></a></span>
+    <div class="toggle-container">
+        <span class="menu-cart"><a href="{% url "checkout" %}"><i class="fa fa-cart-plus"></i><span class="cart-link">(0)</span></a></span>
         <span class="menu-btn">☰</span>
     </div>
 </header>
@@ -21,7 +21,7 @@
             <li><a href="{% url "home" %}"> Home</a></li>
             <li><a href="#">Account</a></li>
             <li><a href="{% url "shop" %}">Shop</a></li>
-            <li><a  href="{% url "checkout" %}"><i class="fa fa-cart-plus">C</i><span class="cart-link">(0)</span></a>
+            <li><a  href="{% url "checkout" %}"><i class="fa fa-cart-plus"></i><span class="cart-link">(0)</span></a>
             </li>
            <li class="mobile-search"> {% include "shop/search.html" %}</li>
         </ul>

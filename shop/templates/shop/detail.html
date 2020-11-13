@@ -2,8 +2,8 @@
 rel="stylesheet" href="{% static "shop/css/detail.css" %}"> {% endblock %} {% block shop %}
 
 <div class="detail-container">
+	<img src="{{ single_product.image }}"  alt="{{ single_product.title }}" style="width: 80%; height: 80%">
 
-   <img src="{% static "shop/images/img3.jpg" %}" alt="glam store" >   
    <h4>{{single_product.title}}</h4>
     <div class="inner-content">
         <p><span class="prod">Category: </span>{{single_product.category}}</p>

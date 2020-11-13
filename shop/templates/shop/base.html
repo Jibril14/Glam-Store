@@ -10,17 +10,19 @@
         {% block css_files %}
 		    {% endblock %}
 		
-		  {% block js_files %}
+		    {% block js_files %}
 			
-			{% endblock %}
+			  {% endblock %}
 
         <!-- CSS Files -->
         <link rel="stylesheet" href="{% static "shop/css/base.css" %}">
+        <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-
         {% include "shop/header.html" %}
-        <div class="carousel-container">{% include "shop/carousel.html" %}</div>
+        <div class="carousel-container">
+          {% include "shop/carousel.html" %}
+        </div>
 
         <div class="page-container">
           {% block shop %}
@@ -31,8 +33,6 @@
         <div class="banner">{% include "shop/banner.html" %}</div>
 
         <div class="banner">{% include "shop/herosale.html" %}</div>
-
-
 
         {% include "shop/footer.html" %}
      
