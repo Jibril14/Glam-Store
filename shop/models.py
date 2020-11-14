@@ -7,7 +7,7 @@ class Products(models.Model):
     discount_price = models.FloatField()
     category = models.CharField(max_length=200)
     description = models.TextField()
-    Image = models.CharField(max_length=600, null=True, blank=True)
+    Image = models.CharField(max_length=600, blank=True, default="https://res.cloudinary.com/webmonc/image/upload/v1661518048/portfolio/shopify-ng/1_zm64ab.jpg")
 
     def __str__(self):
         return self.title
