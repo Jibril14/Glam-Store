@@ -51,3 +51,9 @@ const clearCart = document.getElementById("clear-cart")
 clearCart.addEventListener("click", ()=>{
     localStorage.clear("cart")
 })
+
+
+const thankYou = document.querySelector(".form-btn")
+thankYou.addEventListener("click", ()=>{
+    document.getElementById("thank-you").style.display = "block"
+})

@@ -24,11 +24,12 @@
 }
 
 .search-bar button {
-    background-color: rebeccapurple;
-    color: #664aff;
+    background-color: #fff;
+    color: red;
     border: 0;
     cursor: pointer;
     font-size: 25px;
+    font-weight: bold;
     position: absolute;
     top: 0;
     left: 0;

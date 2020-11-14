@@ -8,22 +8,21 @@
     width: 100%;
     display: flex;
     padding: 30px;
-    margin-bottom: 30px;
-    background-color: aquamarine;
-    overflow: hidden;
-   
-    
+    margin-bottom: 10px;
+    background-color: #fff;
+    overflow: hidden; 
+    position: relative;
 }
 
 .carousel-text {
     width: 50%;
-    padding: 40px 0 30px 40px;
+    padding: 70px 0 30px 40px;
+    text-align: center;
 }
 
 
 
 .carousel {
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
     height: 400px;
     width: 400px;
     overflow: hidden;
@@ -41,24 +40,23 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.buttons-container {
-    transform: translateY(-220px);
-    margin: 4px;
-    position: absolute;
-}
-#left-btn {
-    transform: translateX(calc(-21vw));
-    float: left;
-}
-#right-btn {
-    transform: translateX(calc(22vw));
 
-    float: right;
+#left-btn {
+    position: absolute;
+     left:  3px;
+     top: 50%
+
 }
+
+#right-btn {
+     position: absolute;
+     right: 2px;
+    top: 50%
+} 
 
 .carousel-btn{
     color: #000;
-    background: rgba(235, 101, 101, 0.808);
+    background: rgba(245, 76, 61, 0.692);
     border: none;
     border-radius: 5px;
     padding: 4px;
@@ -68,7 +66,7 @@
 
 .carousel-btn:hover {
     opacity: 0.8;
-    background: rgb(165, 236, 229);
+    background: rgba(116, 51, 8, 0.692);
 }
 
 .carousel-btn:focus {
@@ -88,15 +86,15 @@
         padding: 7px;
         text-align: center;
     }
-    .buttons-container {
-        position: relative;
-    }
+   
     #left-btn {
-        transform: translateX(0);
+        left: 40px !important;
+        top: 60%
     }
     #right-btn {
-        float: right;
-        transform: translateX(0);
+         right: 40px !important;
+         top: 60%
+        
     }
 }
 
