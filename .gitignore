@@ -3,6 +3,8 @@
 /static
 /secret_key.txt
 secret_key.txt
+requirements.txt
+/requirements.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
